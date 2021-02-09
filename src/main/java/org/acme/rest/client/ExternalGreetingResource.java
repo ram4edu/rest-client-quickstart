@@ -1,5 +1,7 @@
 package org.acme.rest.client;
 
+import java.util.Random;
+
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -21,5 +23,11 @@ public class ExternalGreetingResource {
     public Response hello() {
     	return contactExternalService.getGreeting();
         
+    }
+    
+    @GET
+    @Path("r1")
+    public String hey() {
+    	return "this is regular"; 
     }
 }

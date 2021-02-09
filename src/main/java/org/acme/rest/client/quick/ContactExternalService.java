@@ -10,6 +10,6 @@ import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 public interface ContactExternalService {
 
 	@GET
-	@Path("greeting")
+	@Path("/greeting")
 	Response getGreeting();
 }
